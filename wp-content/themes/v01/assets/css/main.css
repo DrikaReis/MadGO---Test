@@ -1,0 +1,269 @@
+html, body{
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/* ----------- HEADER START ----------- */
+#header{
+	background-color: #6f6f6f;
+	min-height: 56px;
+}
+
+#header .navbar-custom{
+	padding: 0;
+	justify-content: space-between;
+}
+
+#header .navbar-custom .collapse-custom{
+	flex-grow: initial;
+}
+
+#header ul li{
+	padding: 0 10px;
+}
+
+#header ul li a{
+	color: #fff;
+   font-size: 18px;
+   font-weight: lighter;
+   letter-spacing: 1px;
+   line-height: 55px;
+}
+
+
+#header ul li a:hover{
+	text-decoration: none;
+}
+
+#header ul li.current-menu-item a{
+	color: #01ff96;
+	font-weight: bolder;
+}
+
+#header .navbar-custom button{
+	border: none;
+}
+
+#header .navbar-custom button:focus{
+	outline: thin dotted;
+   outline: 0px auto -webkit-focus-ring-color;
+   outline-offset: 0px;
+}
+
+#header .navbar-custom .icon-custom{
+	background-image: none;
+	background-image: url('../img/hamburguer.png');
+	background-size: 25px;
+}
+
+/* ----------- HEADER END ----------- */
+
+/* ----------- CORPO START ----------- */
+
+#corpo{
+	/*margin: 40px 0 10px;*/
+	display: flex;
+   align-items: center;
+}
+
+#corpo .title{
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+#corpo .by{
+	height: auto;
+}
+
+#corpo .title h1{
+	text-transform: uppercase;
+   color: #404040;
+   margin-bottom: 1px;
+   letter-spacing: 2px;
+   font-size: 36px;
+}
+
+#corpo .title p{
+	text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 12px;
+    word-spacing: 1px;
+}
+
+#corpo hr.borda{
+	 border: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #01ff96;
+    margin-bottom: 20px;
+}
+
+#corpo .title-int{
+	margin-left: 2px;
+}
+
+#corpo img{
+	max-height: 145px;
+	overflow: hidden;
+	display: none;
+}
+
+#corpo .fakeImg{
+    background: no-repeat center top;
+    background-size: cover;    
+}
+
+#corpo .left, .right{
+	background-color: #dbdbdb;
+}
+
+#corpo .left .img{
+    padding-right: 0;
+}
+
+#corpo .left .text{
+	padding: 2% 50px 0 50px;
+}
+
+#corpo .right .img{
+	left: 50%;
+    padding-left: 0;
+}
+
+#corpo .right .text{
+	right: 50%;
+	padding: 2% 40px 0 60px;
+}
+
+#corpo .text h4{
+	color: #6f6f6f;
+    font-size: 18px;
+    font-weight: 450;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+	margin-top: -33px;
+}
+
+#corpo .text p{
+	color: #4c4c4c;
+    font-weight: 600;
+    font-size: 12px;
+    word-spacing: 1px;
+    margin-bottom: 0;
+}
+
+/* ----------- CORPO END ----------- */
+
+/* ----------- FOOTER START ----------- */
+
+#footer{
+	background-color: #6f6f6f;
+	height: 56px;
+}
+
+#footer .footer, .row{
+	height: 100%;
+}
+
+#footer .logo-footer{
+	display: flex;
+    align-items: center;
+}
+
+#footer .dev-by{
+	text-align: right;
+	color: #b7b7b7;
+}
+
+#footer .dev-by p{
+	margin-bottom: 0;
+}
+
+#footer .dev-by a{
+	line-height: 56px;
+    text-align: right;
+    color: #b7b7b7;
+    text-decoration-line: underline;
+}
+
+/* ----------- FOOTER END ----------- */
+
+/* ----------- RESPONSIVE START ----------- */
+
+/* Tamanho tablete */
+
+@media screen and (max-width: 991px) {
+	#header .navbar-custom{
+		padding: 8px 0;
+	}
+
+	#corpo{
+		margin: 32px 0;
+	}
+
+	#corpo .text p{
+		margin-bottom: 0;
+	}
+
+	#corpo .left .text{
+		padding-top: 1%;
+	}
+
+	#corpo .right .text{
+		padding-top: 1%;
+	}
+}
+
+/* Tamanho smartphone */
+
+@media screen and (max-width: 767px) {
+	#corpo{
+		margin: 20px 0;
+	}
+
+	#corpo .title{
+		margin-bottom: 0;
+	}
+
+	#corpo .left, .right{
+		background-color: transparent;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	#corpo .borda{
+		margin-bottom: 0;
+	}
+
+	#corpo .title-int{
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+
+	#corpo .left .img{
+	    padding-right: 15px;
+	}
+
+	#corpo .left .text{
+		padding: 0 15px;
+	}
+
+	#corpo .right .img{
+		left: 0;
+	    padding-left: 15px;
+	}
+
+	#corpo .right .text{
+		right: 0;
+		padding: 0 15px;
+	}
+
+	#corpo .text h4{
+		margin-top: -33px;
+	}
+}
+
+/* ----------- RESPONSIVE END ----------- */
